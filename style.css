@@ -1,0 +1,168 @@
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    background-color: #232323;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    border-bottom: 3px solid orangered;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.navbar {
+    float: right;
+    text-transform: uppercase;
+}
+
+.titulo {
+    float: left;
+    display: flex;
+    align-self: center;
+}
+
+li {
+    margin: 10px;
+}
+
+.destaque_1 {
+    color: orangered;
+    margin-right: 10px;
+}
+
+.destaque {
+    color: orangered;
+    margin: 0;
+}
+
+.banner {
+    text-align: center;
+    background-color: #b1b1b1;
+    background-image: url(imgs/banner-fundo-big.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-self: center;
+}
+
+.banner h1 {
+    font-size: 50px;
+}
+
+.banner h3 {
+    color: #555555;
+}
+
+.saiba-mais {
+    text-align: center;
+    background-color: #232323;
+    height: 90px;
+    display: flex;
+    align-self: center;
+    border-bottom: 3px solid orangered;
+}
+
+.saiba-mais button {
+    border: 0;
+    background-color: orangered;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.box .container {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.box-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.box-item img {
+    height: 100px;
+}
+
+.footer {
+    background-color: #232323;
+    color: white;
+    text-align: center;
+    border-top: 3px solid orangered;
+}
+
+.footer .container {
+    margin-top: 0;
+}
+
+.footer .container h3 {
+    padding: 33px;
+    margin: 0;
+}
+
+.footer .container a {
+    color: white;
+    margin: 0;
+}
+
+.sobrenos {
+    background-image: url(imgs/vinicius-amnx-amano-qckXUZefhoU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -400px;
+    border-top: 3px solid orangered;
+    text-align: center;
+}
+
+.sobrenos .destaque {
+    width: 20%;
+    margin: auto;
+}
+
+.sobrenos .container .destaque {
+    font-size: 300%;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid orangered;
+}
+
+.sobrenos img {
+    width: 40%;
+    margin: 50px;
+    border: 2px solid black;
+}
+
+.sobrenos_texto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #555555;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sobrenos_texto p {
+    font-size: 30px;
+}
