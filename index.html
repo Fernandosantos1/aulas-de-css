@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
                 <li><span class="destaque">Home</span></li>
                 <li>Sobre</li>
                 <li>Cadastro</li>
-                <li>Login</li>
+                <li><a href="login.html">Login</a></li>
             </ul>
 
         </div>
@@ -70,11 +71,16 @@
             </div>
         </div>
     </div>
+    <div class="chart">
+        <div class="container">
+            <canvas id="myChart"></canvas>  
+        </div>
+    </div>
     <div class="footer">
         <div class="container">
 
             <a href="https://github.com/Fernandosantos1">
-                <h3>Feito com ódio por um aluno <b>Bandtec</b></h3>
+                <h3>Feito com amor por um aluno <b>Bandtec</b></h3>
             </a>
         </div>
     </div>
@@ -82,3 +88,80 @@
 </body>
 
 </html>
+<script>
+   
+    var ctx = document.getElementById('myChart');
+
+    var meuGrafico = new Chart(ctx, {
+       
+        type: 'line',
+
+       
+        data: {
+            
+            labels: ["jan", "fev", "mar", "abr", "mai", "jun","jul","ago","set","nov","dez"],
+            
+            datasets: [
+                
+            {
+                
+                label: "Taxa de Abstenção",
+                
+                data: [60, 55, 45, 50, 43, 33,22,25,20,17,22],
+                
+                borderWidth: 5,
+               
+                
+                borderColor: '#cc0099',
+               
+                backgroundColor: 'transparent',
+            },
+
+            
+            {
+                
+                type: 'line',
+                label: "Taxa de Produtividade",
+                data: [0, 15, 20, 23, 33 ,25,40,35,50,55,60],
+                borderWidth: 5,
+                borderColor: '#00a1d7',
+                backgroundColor: 'transparent'
+            }
+            ]
+        },
+        
+        
+        options: {
+            
+            title: {
+                
+                display: true,
+                
+                fontSize: 20,
+                
+                text: "Meus rendimentos",
+                
+                position: 'top',
+            },
+            legend: {
+               
+                display: true,
+               
+                reverse: true,
+               
+                position: 'right'
+            },
+            layout: {
+            padding: {
+                
+                left: 50,
+                top: 50
+            },
+           
+        }
+        }
+    })
+
+    
+    Chart.defaults.global.defaultFontColor = "#111";
+</script>
